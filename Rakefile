@@ -8,7 +8,7 @@ Echoe.new 'instrumentation' do |p|
   p.email  = 'dev@fiveruns.com'
   p.project = 'fiveruns'
   p.summary = "Provides a simple API for instrumenting Ruby method invocations."
-  p.url = "http://github.com/fiveruns/simple-insrumentation"
+  p.url = "http://github.com/fiveruns/instrumentation"
   p.dependencies = %w(activesupport)
   p.include_rakefile = true
 end
