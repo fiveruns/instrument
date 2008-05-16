@@ -1,0 +1,5 @@
+History.txt
+Manifest
+README.txt
+test/instrumentation_test.rb
+test/test_helper.rb

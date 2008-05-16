@@ -1,0 +1,5 @@
+= History
+
+2008-04-15: Generalize, rename
+2008-02-28: Simplified to just provide a hook, not handle context determination
+2008-02-27: Basic features
