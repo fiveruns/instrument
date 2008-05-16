@@ -1,15 +1,12 @@
-fiveruns-core
-    FiveRuns Corporation
-    RDoc, Gems: http://fiveruns.rubyforge.org/fiveruns-core
-    Source: http://github.com/fiveruns/fiveruns-core
+= Instrument Library
 
-== DESCRIPTION:
+== Description
 
-Basic DSL-style API for instrumenting Ruby methods.
+Provides a simple API for instrumenting Ruby method invocations
 
-== FEATURES/PROBLEMS:
+== Features/Problems
 
-TODO
+Simply wraps methods, times invocations, and yields to the given handler.
 
 == SYNOPSIS:
 
@@ -20,10 +17,8 @@ TODO
   end
   
   invocations = []
-  Fiveruns::Core::Instrumentation.new do
-    instrument 'Foo#go' do |obj, time, *args|
-      invocations << time
-    end
+  instrument 'Foo#go' do |obj, time, *args|
+    invocations << time
   end
   
   foo = Foo.new
@@ -37,7 +32,7 @@ TODO
 
 == INSTALL:
 
-* sudo gem install fiveruns-core
+* sudo gem install instrument
 
 == LICENSE:
 
