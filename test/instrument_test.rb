@@ -48,7 +48,7 @@ class InstrumentFake < Test::Unit::TestCase
   context "Correct Behavior" do
   
     setup do
-      Instrument.clear
+      Instrument.handlers.clear
     end
   
     should "executes hooks" do

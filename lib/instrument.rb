@@ -18,11 +18,6 @@ module Instrument
   def self.handlers
     @handlers ||= []
   end
-  
-  # Clear all handlers (use with caution)
-  def self.clear
-    handlers.clear
-  end
 
   def self.add(*raw_targets, &handler)
     raw_targets.each do |raw_target|
