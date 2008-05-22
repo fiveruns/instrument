@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'echoe'
 
-Echoe.new 'instrumentation' do |p|
+Echoe.new 'instrument' do |p|
   # Note: Update version by adding a line to CHANGELOG
   p.author = "FiveRuns Development Team"
   p.test_files = Dir['test/**/*_test.rb']
